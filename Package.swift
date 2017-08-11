@@ -3,5 +3,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "llvmc"
+    name: "llvmc",
+    providers: [
+      .Brew("llvm"),
+    ]
 )
